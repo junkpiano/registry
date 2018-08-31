@@ -3,5 +3,5 @@ rvm:
     - ruby-head
 install:
     - bundle install
-before_script:
+script:
     - bundle exec danger
