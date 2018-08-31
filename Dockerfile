@@ -1,7 +1,7 @@
 FROM registry:2
 
-EXPOSE 5000
-
 WORKDIR /app
 
-COPY . /app
+COPY nginx.conf.sigil /app
+COPY config.yml /etc/docker/registry/
+COPY htpasswd /etc/docker/registry/

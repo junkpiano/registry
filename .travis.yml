@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+    - ruby-head
+install:
+    - bundle install
+before_script:
+    - bundle exec danger
